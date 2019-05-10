@@ -3,6 +3,10 @@ import datetime
 import time
 # Solution for the 1 st and 2nd one 
 # Create IAM client
+
+#1) Write a boto3 script to retrieve access key age of a user, please take username as an input.
+#2) Write a boto3 script to disable access keys if access key age greater than 100 days.
+
 iam = boto3.client('iam')
 
 username = input('enter username to be verified')

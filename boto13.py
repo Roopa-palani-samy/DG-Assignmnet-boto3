@@ -2,7 +2,7 @@ import boto3
 
 client = boto3.client('ec2')
 print(client)
-# Tagging owner id because user name is tagged by default 
+# 3)Tagging owner id because user name is tagged by default 
 response = client.describe_instances(
     Filters=[
         {
